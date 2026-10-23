@@ -1,0 +1,25 @@
+[project]
+name = "dataagent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+
+requires-python = ">=3.12"
+dependencies = [
+    "dotenv>=0.9.9",
+    "ipython>=9.17.1",
+    "langchain>=1.4.3",
+    "langchain-google-genai>=4.4.0",
+    "langgraph>=1.2.12",
+    "pandas>=3.0.6",
+    "psycopg2-binary>=2.9.13",
+    "pydantic>=2.13.5",
+    "streamlit>=1.66.1",
+]
+
+[project.scripts]
+dataagent = "dataagent:main"
+
+[build-system]
+requires = ["uv_build>=0.12.21,<0.13.0"]
+build-backend = "uv_build"
